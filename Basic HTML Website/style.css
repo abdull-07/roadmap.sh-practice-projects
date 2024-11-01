@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: #fff;
+    height: 10vh;
+}
+
+.welcom{
+    height: 40vh;
+}
+
+.navbar .logo {
+    font-weight: bold;
+}
+
+.navbar nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+h1 {
+    font-size: 2em;
+    margin-top: 5em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20px;
+    height: 100vh;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#projects,
+#work,
+#education {
+    grid-column: span 1;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+}
+
+#projects{
+    border-right: 2px solid;
+}
+#education{
+    border-left: 2px solid;
+}
+
+#reviews {
+    grid-column: span 3;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+#projects>ul>li {
+    padding: 10px 0px;
+    border-bottom: 2px solid;
+}
+
+#education>ul>p{
+    padding-bottom: 10px;
+}
+#education>ul>li{
+    list-style: inside;
+}
+
+.work-item {
+    padding: 10px;
+}
+
+.review {
+    margin: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 40px;
+    border: 1px solid #ddd;
+}
+
+.review p {
+    margin: 5px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9em;
+}
