@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tooltip Navigation</title>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f4f4f9;
+    }
+    .nav {
+        display: flex;
+        gap: 20px;
+        padding: 15px;
+        border-radius: 8px;
+    }
+    .nav-item {
+        position: relative;
+        color: #333;
+        font-size: 16px;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+    .nav-item:hover {
+        background-color: #555;
+        color: #f4f4f9;
+    }
+    .nav-item .tooltip {
+        position: absolute;
+        bottom: 100%; /* Position above the nav item */
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px 10px;
+        background-color: #333;
+        color: #fff;
+        font-size: 12px;
+        border-radius: 4px;
+        white-space: nowrap;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s;
+        margin-bottom: 8px; /* Space between tooltip and item */
+    }
+    .nav-item:hover .tooltip {
+        opacity: 1;
+        visibility: visible;
+    }
+    /* Tooltip Arrow */
+    .nav-item .tooltip::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-width: 5px;
+        border-style: solid;
+        border-color: #333 transparent transparent transparent;
+    }
+</style>
+</head>
+<body>
+
+<div class="nav">
+    <a href="#" class="nav-item">
+        Home
+        <span class="tooltip">Go to home page</span>
+    </a>
+    <a href="#" class="nav-item">
+        About
+        <span class="tooltip">Learn more about us</span>
+    </a>
+    <a href="#" class="nav-item">
+        Services
+        <span class="tooltip">View our services</span>
+    </a>
+    <a href="#" class="nav-item">
+        Contact
+        <span class="tooltip">Get in touch with us</span>
+    </a>
+</div>
+
+</body>
+</html>
