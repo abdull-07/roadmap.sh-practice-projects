@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Date Picker</title>
+  <style>
+    /* Basic container styling */
+    .date-picker-container {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      margin: 50px auto;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Label styling */
+    .date-picker-label {
+      font-size: 1rem;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    /* Date picker input styling */
+    .date-picker {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      width: 100%;
+      background-color: #f9f9f9;
+      cursor: pointer;
+      color: #555;
+    }
+
+    /* Add hover and focus effect */
+    .date-picker:hover, .date-picker:focus {
+      border-color: #333;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="date-picker-container">
+    <label for="date" class="date-picker-label">Select a date:</label>
+    <input type="date" id="date" class="date-picker">
+  </div>
+
+</body>
+</html>

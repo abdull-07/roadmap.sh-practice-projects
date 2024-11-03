@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Profile Comment</title>
+  <style>
+    /* Container for profile and tooltip */
+    .profile-container {
+      position: relative;
+      width: max-content;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Profile image */
+    .profile-image {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    /* Profile name and title */
+    .profile-info {
+      margin-top: 8px;
+    }
+
+    /* Tooltip container (initially hidden) */
+    .tooltip {
+      display: none;
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 250px;
+      padding: 15px;
+      border-radius: 8px;
+      background-color: #333;
+      color: white;
+      font-size: 0.9rem;
+      text-align: left;
+      line-height: 1.4;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Triangle below the tooltip */
+    .tooltip::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 8px;
+      border-style: solid;
+      border-color: #333 transparent transparent transparent;
+    }
+
+    /* Show tooltip on hover */
+    .profile-container:hover .tooltip {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-container">
+    <!-- Tooltip that appears on hover -->
+    <div class="tooltip">
+      I have been solving all the project ideas on roadmap.sh and I am surprised how far I have come from where I started.<br><br>
+      Highly recommended!
+    </div>
+    
+    <!-- Profile image and info -->
+    <img src="profile.jpg" alt="Artem Jones" class="profile-image">
+    <div class="profile-info">
+      <strong>Artem Jones</strong><br>
+      <span>Junior Frontend Developer</span>
+    </div>
+  </div>
+
+</body>
+</html>

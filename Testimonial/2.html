@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+            margin: 0;
+        }
+
+        .testimonial-card {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 600px;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid;
+            border-radius: 20px;
+        }
+
+        .testimonial {
+            display: flex;
+            margin: 20px;
+            gap: 20px;
+        }
+
+        .content {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            flex: 1;
+        }
+
+        .stars {
+            color: #fbc02d;
+            margin-bottom: 10px;
+        }
+
+        .name {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .title {
+            font-size: 14px;
+            color: #ccc;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        .text {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="testimonial-card">
+        <div class="testimonial">
+            <div class="profile-pic"><img src="profile.jpg" alt="Profile Picture"></div>
+            <div class="content">
+                <div class="stars">★★★★★</div>
+                <p class="name">Jackie Mackle</p>
+                <p class="title">Engineering Manager</p>
+                <p class="text">
+                    I find myself recommending roadmap.sh to all the internees or junior developers. It's a great way to
+                    skill up and grow in your career.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
