@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabs Example</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="tabs">
+    <button class="tab-button active" onclick="showTab(0)">Tab 1</button>
+    <button class="tab-button" onclick="showTab(1)">Tab 2</button>
+    <button class="tab-button" onclick="showTab(2)">Tab 3</button>
+    <button class="tab-button" onclick="showTab(3)">Tab 4</button>
+  </div>
+
+  <div class="tab-content">
+    <div class="content active" id="content-0">Content for Tab 1</div>
+    <div class="content" id="content-1">Content for Tab 2</div>
+    <div class="content" id="content-2">Content for Tab 3</div>
+    <div class="content" id="content-3">Content for Tab 4</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
