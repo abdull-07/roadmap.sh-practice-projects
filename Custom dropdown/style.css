@@ -1,0 +1,62 @@
+/* General dropdown styling */
+.dropdown {
+    width: 500px;
+    position: relative;
+    font-family: Arial, sans-serif;
+    margin: 10px auto;
+}
+
+.dropdown-header {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-header.selected {
+    font-weight: bold;
+}
+
+.dropdown-icon {
+    transition: transform 0.3s;
+}
+
+.dropdown-header.open .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+/* Dropdown options styling */
+.dropdown-options {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none; /* Hidden by default */
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.dropdown-options.open {
+    display: block;
+}
+
+.dropdown-option {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-option:hover {
+    background-color: #f0f0f0;
+}
+
+/* Highlight selected option */
+.dropdown-option.selected {
+    font-weight: bold;
+    background-color: #e6f7ff;
+}

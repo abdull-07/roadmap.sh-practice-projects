@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion Component</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="accordion">
+        <h1>Frequently Asked Questions</h1>
+        <p>Here are some of the frequently asked questions</p>
+
+        <!-- Accordion items -->
+         <div class="accordion-items">
+            <div class="accordion-item">
+                <button class="accordion-header">What is JavaScript? <span>▼</span></button>
+                <div class="accordion-content">
+                    <p>JavaScript is a lightweight, interpreted programming language primarily used for creating dynamic web content and enhancing interactivity on websites.</p>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <button class="accordion-header">What is the difference between var, let, and const? <span>▼</span></button>
+                <div class="accordion-content">
+                    <p>var is function-scoped, let and const are block-scoped. const prevents reassignment, whereas let allows it.</p>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <button class="accordion-header">What are JavaScript data types? <span>▼</span></button>
+                <div class="accordion-content">
+                    <p>JavaScript has two categories: Primitive types (string, number, boolean, null, undefined, symbol, bigint) and Non-Primitive types (Objects like Arrays and Functions).</p>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <button class="accordion-header">What is the difference between == and ===? <span>▼</span></button>
+                <div class="accordion-content">
+                    <p>== checks value equality and performs type coercion, while === checks both value and type equality (strict equality).</p>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <button class="accordion-header">What is a closure in JavaScript? <span>▼</span></button>
+                <div class="accordion-content">
+                    <p>A closure is when a function retains access to variables from its outer scope even after the outer function has executed.</p>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <button class="accordion-header">What is the DOM in JavaScript? <span>▼</span></button>
+                <div class="accordion-content">
+                    <p>The Document Object Model (DOM) is a programming interface that represents a web page as a tree structure, enabling JavaScript to interact with the page's elements dynamically.</p>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <button class="accordion-header">What is event delegation in JavaScript? <span>▼</span></button>
+                <div class="accordion-content">
+                    <p>Event delegation is a technique where a single event listener is added to a parent element to handle events on its child elements.</p>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <button class="accordion-header">What are JavaScript promises? <span>▼</span></button>
+                <div class="accordion-content">
+                    <p>A promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.</p>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <button class="accordion-header">What is the purpose of async/await in JavaScript? <span>▼</span></button>
+                <div class="accordion-content">
+                    <p>async/await makes handling asynchronous code easier, enabling you to write asynchronous code that looks and behaves like synchronous code.</p>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <button class="accordion-header">What is the difference between null and undefined? <span>▼</span></button>
+                <div class="accordion-content">
+                    <p>null represents an intentional absence of value, whereas undefined means a variable has been declared but not assigned a value.</p>
+                </div>
+            </div>
+            
+         </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
