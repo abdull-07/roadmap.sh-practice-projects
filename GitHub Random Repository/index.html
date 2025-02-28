@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Random Repository</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub Repository Finder</h1>
+    
+        <!-- Dropdown and Button -->
+        <div class="controls">
+          <select id="language-select">
+            <option value="" disabled selected>Select a Language</option>
+            <option value="javascript">JavaScript</option>
+            <option value="typescript">TypeScript</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="ruby">Ruby</option>
+            <option value="c#">C#</option>
+            <option value="c++">C++</option>
+            <option value="c">C</option>
+          </select>
+          <button id="fetch-repo">Find Repository</button>
+        </div>
+    
+        <!-- Status Messages -->
+        <div id="status" class="status"></div>
+    
+        <!-- Repository Information -->
+        <div id="repo-container" class="repo-container hidden">
+          <h2 id="repo-name"></h2>
+          <p id="repo-description"></p>
+          <div id="repo-stats"></div>
+          <button id="refresh">Refresh</button>
+        </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
